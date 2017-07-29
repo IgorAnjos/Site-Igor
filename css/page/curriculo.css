@@ -1,0 +1,62 @@
+@import url('../style.css');
+
+/*cv-2017*/
+#cv-2017 {
+	text-align: justify;
+}
+
+#cv-2017 h3 {
+	text-align: -webkit-left;
+	text-transform: uppercase;
+}
+
+#cv-2017 p {
+	text-align: justify;
+}
+
+.cv-title h1, h2 {
+    text-align: -webkit-left;
+    text-transform: uppercase;
+}
+
+.cv-sobremim {
+	margin-top: 25px;
+}
+
+.cv-sobremim p {
+	text-align: justify;
+}
+
+.cv-experiencia {
+	margin-top: 25px;
+	
+}
+
+.cv-experiencia ul li {
+	text-align: -webkit-left;
+	overflow: hidden;
+	width: 490px;
+}
+
+.cv-formacao {
+	text-align: -webkit-left;
+	margin-top: 25px;
+	overflow: hidden;
+}
+
+/*img*/
+div.photo img {
+	margin-top: 20px;
+	border-radius: 5%;
+	margin-bottom: 25px;
+	box-shadow: 0px -1px 15px 2px rgba(100, 150, 240, 0.9);
+}
+
+div.cv-contato {
+	margin-left: 25px;
+}
+
+h2:after { 
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%; 
+}

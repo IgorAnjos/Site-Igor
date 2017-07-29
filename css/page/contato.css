@@ -1,0 +1,76 @@
+@import url('../style.css');
+/*header*/
+#header.page-contato {
+	background-image: #000 url("../../imagem/imagem-6.jpg") no-repeat fixed;
+}
+
+/*Main*/
+main {
+	background-color: rgb(230,230, 230);
+}
+
+.section #page-contact {
+	height: 500px;
+}
+
+/*botão*/
+.btn-orange {
+	border-radius: 3%;
+	padding: 20px 60px;
+	font-size: 15px;
+	border: none;
+	margin-bottom: 25px;
+	background-color: rgb(0, 100, 255);
+	color: rgb(255, 255, 255);
+}
+.btn-orange:hover {
+	border-radius: 3%;
+	padding: 20px 60px;
+	font-size: 15px;
+	border: none;
+	background-color: rgb(0, 0, 0);
+}
+/*Tamanho dos campos*/
+.imput-control input, textarea {
+    width: 100%;
+}
+
+div.contact h2 {
+    margin: 25px 0px 25px 0px;
+}
+
+div.contact h2:after {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+}
+
+/**/
+input:focus, text:focus {
+	outline: 1px solid #777;
+}
+
+ input::placeholder, textarea::placeholder {
+ 	color: rgb(250, 250, 250);
+ }
+
+input:focus::placeholder, textarea:focus::placeholder {
+	color: #aaa;
+}
+
+.input-control {
+	position: relative;
+}
+
+.input-control label {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+
+.input-control input:focus ~ label, .input-control textarea:focus ~ label {
+	top: 0;
+	font-size: 12px;
+	transition: ease .5s all;
+}
+
+/*footer*/

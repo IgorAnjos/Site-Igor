@@ -1,0 +1,51 @@
+@import url('../style.css');
+/*img*/
+.tcc-content  .tcc-display-container img {
+    width: 1000px;
+    height: 475px;
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin: auto;
+}
+
+/*H2*/
+#tcc-intro h2 {
+    margin: 25px 0 25px 0;
+}
+
+ h2:after {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+}
+
+.tcc-text {
+    text-align: justify;
+}
+
+#tcc-intro div.tcc-text p {
+    margin-bottom: 25px;
+}
+
+/*IMG Slide*/
+
+.mySlides {
+    width: 250px;
+    height: 150px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 25px 0; 
+    position: relative;
+    box-shadow: 0px -1px 15px 2px rgba(100, 150, 240, 0.9);
+}
+
+.mySlides:hover {
+    width: 270px;
+    height: 170px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    left: 5%;
+    position: absolute;
+}

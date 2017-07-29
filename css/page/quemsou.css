@@ -1,0 +1,75 @@
+@import url('../style.css');
+/*header*/
+#header.page-quemsou {
+	background-image: #000 url("../../imagem/imagem-6.jpg") no-repeat fixed;
+}
+#intro h2, #valores h2 {
+	font-size: 25px;
+}
+
+#intro h2 {
+	text-align: left;
+	margin-top: 25px;
+}
+
+#intro h2:after {
+	margin: 5px auto 0 auto;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+}
+/*valores*/
+#valores {
+	background-color: rgb(133, 133, 133);
+	margin-top: 25px;
+}
+#valores:after {
+	display: none;
+}
+
+#valores div.col.col-desktop-4 p {
+    margin-bottom: 25px;
+}
+/*img dos valores e oportunindade*/
+#valores img {
+	width: 250px;
+	height: 250px;
+	border-radius: 100%;
+	margin-top: 25px;
+	background-color: rgba(133, 133, 133, 0.9);
+	box-shadow: 0px -1px 15px 2px rgba(100, 149, 237, 0.9);
+}
+
+/* texto sobre mim*/
+#intro p {
+	line-height: 20px;
+	text-align: justify;
+	margin-top: 20px;
+}
+
+/*img sobre mim*/
+#intro img {
+	width: 350px;
+	height: 350px;
+	border-radius: 5%;
+	margin-top: 25px;
+	box-shadow: 0px -1px 15px 2px rgba(100, 150, 240, 0.9);
+}
+
+/*photo-1*/
+#photo-1 img {
+	width: 150px;
+	height: 150px;
+	float: right;
+	background-color: rgba(133, 133, 133, 0.9);
+}
+
+/*photo-2*/
+#photo-2 img {
+	width: 150px;
+	height: 150px;
+	float: right;
+	background-color: rgba(133, 133, 133, 0.9);
+}
+
+
+/*footer*/
