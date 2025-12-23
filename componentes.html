@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Componentes - Portfólio Moderno</title>
+    
+    <!-- Stylesheets -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/modern-reset.css">
+    <link rel="stylesheet" href="css/modern-layout.css">
+    <link rel="stylesheet" href="css/modern-components.css">
+</head>
+<body>
+    <div class="container" style="padding-top: var(--space-4xl); padding-bottom: var(--space-4xl);">
+        
+        <!-- Header -->
+        <header style="text-align: center; margin-bottom: var(--space-4xl);">
+            <h1 style="font-size: var(--font-size-5xl); margin-bottom: var(--space-md);">
+                Guia de Componentes
+            </h1>
+            <p style="font-size: var(--font-size-lg); color: var(--color-text-secondary);">
+                Exemplos de todos os componentes e utilidades disponíveis
+            </p>
+            
+            <!-- Theme Toggle -->
+            <div style="margin-top: var(--space-xl); display: flex; justify-content: center;">
+                <button class="theme-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    </svg>
+                </button>
+            </div>
+        </header>
+
+        <!-- Colors Section -->
+        <section class="section" style="background-color: var(--color-background-alt); padding: var(--space-3xl); border-radius: var(--border-radius-lg); margin-bottom: var(--space-3xl);">
+            <h2 style="margin-bottom: var(--space-xl);">🎨 Cores</h2>
+            
+            <div class="grid md:grid-cols-3 gap-md">
+                <div style="padding: var(--space-lg); background-color: var(--color-primary); color: white; border-radius: var(--border-radius-md); text-align: center;">
+                    <strong>Primary</strong>
+                </div>
+                <div style="padding: var(--space-lg); background-color: var(--color-secondary); color: white; border-radius: var(--border-radius-md); text-align: center;">
+                    <strong>Secondary</strong>
+                </div>
+                <div style="padding: var(--space-lg); background-color: var(--color-accent); color: white; border-radius: var(--border-radius-md); text-align: center;">
+                    <strong>Accent</strong>
+                </div>
+            </div>
+        </section>
+
+        <!-- Typography Section -->
+        <section class="section" style="margin-bottom: var(--space-3xl);">
+            <h2 style="margin-bottom: var(--space-xl);">📝 Tipografia</h2>
+            
+            <div class="card">
+                <h1 style="margin-bottom: var(--space-sm);">Heading 1 - Título Principal</h1>
+                <h2 style="margin-bottom: var(--space-sm);">Heading 2 - Título de Seção</h2>
+                <h3 style="margin-bottom: var(--space-sm);">Heading 3 - Subtítulo</h3>
+                <h4 style="margin-bottom: var(--space-sm);">Heading 4 - Menor Destaque</h4>
+                <p style="margin-top: var(--space-lg);">
+                    Parágrafo regular com texto corrido. Este é um exemplo de como o texto 
+                    padrão aparece no sistema com a fonte Inter, line-height adequado e 
+                    cor de texto secundária para melhor legibilidade.
+                </p>
+                <p style="margin-top: var(--space-md);"><strong>Texto em negrito</strong> e <em>texto em itálico</em>.</p>
+            </div>
+        </section>
+
+        <!-- Buttons Section -->
+        <section class="section" style="margin-bottom: var(--space-3xl);">
+            <h2 style="margin-bottom: var(--space-xl);">🔘 Botões</h2>
+            
+            <div class="card">
+                <div class="flex gap-md flex-wrap">
+                    <button class="btn btn-primary">Primário</button>
+                    <button class="btn btn-secondary">Secundário</button>
+                    <button class="btn btn-outline">Outline</button>
+                    <button class="btn btn-ghost">Ghost</button>
+                    <button class="btn btn-primary" disabled>Desabilitado</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cards Section -->
+        <section class="section" style="margin-bottom: var(--space-3xl);">
+            <h2 style="margin-bottom: var(--space-xl);">🃏 Cards</h2>
+            
+            <div class="grid md:grid-cols-3 gap-lg">
+                <div class="card">
+                    <h3 class="card-title">Card Simples</h3>
+                    <p class="card-description">
+                        Este é um card básico com título e descrição. 
+                        Possui hover effect com elevação.
+                    </p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Card com Header</h3>
+                    </div>
+                    <p class="card-description">
+                        Card com separação clara entre header e conteúdo.
+                    </p>
+                </div>
+                
+                <div class="card">
+                    <h3 class="card-title">Card com Ação</h3>
+                    <p class="card-description" style="margin-bottom: var(--space-lg);">
+                        Card que inclui um botão de ação.
+                    </p>
+                    <button class="btn btn-primary w-full">Clique Aqui</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Elements Section -->
+        <section class="section" style="margin-bottom: var(--space-3xl);">
+            <h2 style="margin-bottom: var(--space-xl);">📋 Elementos de Formulário</h2>
+            
+            <div class="card max-w-2xl mx-auto">
+                <form>
+                    <div class="form-group">
+                        <label for="example-name" class="form-label">Nome Completo</label>
+                        <input 
+                            type="text" 
+                            id="example-name" 
+                            class="form-input" 
+                            placeholder="Digite seu nome"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="example-email" class="form-label">E-mail</label>
+                        <input 
+                            type="email" 
+                            id="example-email" 
+                            class="form-input" 
+                            placeholder="seu@email.com"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="example-message" class="form-label">Mensagem</label>
+                        <textarea 
+                            id="example-message" 
+                            class="form-textarea" 
+                            placeholder="Escreva sua mensagem..."
+                            rows="4"
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-full">
+                        Enviar Formulário
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Grid System Section -->
+        <section class="section" style="margin-bottom: var(--space-3xl);">
+            <h2 style="margin-bottom: var(--space-xl);">📐 Sistema de Grid</h2>
+            
+            <div style="margin-bottom: var(--space-lg);">
+                <h3 style="margin-bottom: var(--space-md);">2 Colunas no Desktop</h3>
+                <div class="grid md:grid-cols-2 gap-md">
+                    <div class="card" style="background-color: var(--color-primary); color: white;">
+                        <p>Coluna 1</p>
+                    </div>
+                    <div class="card" style="background-color: var(--color-secondary); color: white;">
+                        <p>Coluna 2</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-bottom: var(--space-lg);">
+                <h3 style="margin-bottom: var(--space-md);">3 Colunas no Desktop</h3>
+                <div class="grid md:grid-cols-3 gap-md">
+                    <div class="card" style="background-color: var(--color-primary); color: white;">
+                        <p>Coluna 1</p>
+                    </div>
+                    <div class="card" style="background-color: var(--color-secondary); color: white;">
+                        <p>Coluna 2</p>
+                    </div>
+                    <div class="card" style="background-color: var(--color-accent); color: white;">
+                        <p>Coluna 3</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h3 style="margin-bottom: var(--space-md);">4 Colunas no Desktop</h3>
+                <div class="grid md:grid-cols-4 gap-md">
+                    <div class="card" style="background-color: var(--color-primary); color: white;">
+                        <p>Col 1</p>
+                    </div>
+                    <div class="card" style="background-color: var(--color-secondary); color: white;">
+                        <p>Col 2</p>
+                    </div>
+                    <div class="card" style="background-color: var(--color-accent); color: white;">
+                        <p>Col 3</p>
+                    </div>
+                    <div class="card" style="background-color: var(--color-success); color: white;">
+                        <p>Col 4</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Spacing Utilities Section -->
+        <section class="section" style="margin-bottom: var(--space-3xl);">
+            <h2 style="margin-bottom: var(--space-xl);">📏 Espaçamento</h2>
+            
+            <div class="card">
+                <div style="background-color: var(--color-surface-elevated); padding: var(--space-sm); margin-bottom: var(--space-sm); border-radius: var(--border-radius-md);">
+                    <code>p-sm</code> - Padding pequeno
+                </div>
+                <div style="background-color: var(--color-surface-elevated); padding: var(--space-md); margin-bottom: var(--space-sm); border-radius: var(--border-radius-md);">
+                    <code>p-md</code> - Padding médio
+                </div>
+                <div style="background-color: var(--color-surface-elevated); padding: var(--space-lg); margin-bottom: var(--space-sm); border-radius: var(--border-radius-md);">
+                    <code>p-lg</code> - Padding grande
+                </div>
+                <div style="background-color: var(--color-surface-elevated); padding: var(--space-xl); border-radius: var(--border-radius-md);">
+                    <code>p-xl</code> - Padding extra grande
+                </div>
+            </div>
+        </section>
+
+        <!-- Status Colors Section -->
+        <section class="section" style="margin-bottom: var(--space-3xl);">
+            <h2 style="margin-bottom: var(--space-xl);">✅ Cores de Status</h2>
+            
+            <div class="grid md:grid-cols-4 gap-md">
+                <div class="card" style="background-color: var(--color-success); color: white;">
+                    <strong>Sucesso</strong>
+                </div>
+                <div class="card" style="background-color: var(--color-warning); color: white;">
+                    <strong>Aviso</strong>
+                </div>
+                <div class="card" style="background-color: var(--color-error); color: white;">
+                    <strong>Erro</strong>
+                </div>
+                <div class="card" style="background-color: var(--color-info); color: white;">
+                    <strong>Info</strong>
+                </div>
+            </div>
+        </section>
+
+        <!-- Code Examples -->
+        <section class="section">
+            <h2 style="margin-bottom: var(--space-xl);">💻 Exemplos de Código</h2>
+            
+            <div class="card">
+                <h3 style="margin-bottom: var(--space-md);">Variáveis CSS Principais</h3>
+                <pre style="background-color: var(--color-surface-elevated); padding: var(--space-lg); border-radius: var(--border-radius-md); overflow-x: auto;"><code>/* Cores */
+--color-primary: #2563eb;
+--color-secondary: #8b5cf6;
+--color-accent: #f59e0b;
+
+/* Espaçamento */
+--space-xs: 0.25rem;
+--space-sm: 0.5rem;
+--space-md: 1rem;
+--space-lg: 1.5rem;
+--space-xl: 2rem;
+
+/* Tipografia */
+--font-family-base: 'Inter', sans-serif;
+--font-size-base: 1rem;</code></pre>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/app.js" defer></script>
+</body>
+</html>

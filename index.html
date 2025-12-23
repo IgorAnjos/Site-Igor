@@ -1,283 +1,539 @@
-<!doctype html>
-<html lang="pt-br">
-<header>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<!-- Meta Tags -->
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/page/home.css">
-	<link rel="stylesheet" href="css/grid.css">
-	<script src="index.js"></script>
-	<title>Bem Vindo | IGOR</title>
-</header>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Portfólio de Igor Macedo - Engenheiro de Computação especializado em desenvolvimento de software e tecnologia.">
+	<meta name="keywords" content="Igor Macedo, Engenharia de Computação, Desenvolvedor, Portfólio, TCC, Impressora 3D">
+	<meta name="author" content="Igor Macedo dos Anjos">
+	<meta name="theme-color" content="#2563eb">
+	
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Igor Macedo - Engenheiro de Computação">
+	<meta property="og:description" content="Portfólio profissional de Igor Macedo, estudante de Engenharia de Computação.">
+	
+	<!-- Preconnect for Performance -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+	
+	<!-- Stylesheets - Order matters for cascade -->
+	<link rel="stylesheet" href="css/variables.css">
+	<link rel="stylesheet" href="css/modern-reset.css">
+	<link rel="stylesheet" href="css/modern-layout.css">
+	<link rel="stylesheet" href="css/modern-components.css">
+	
+	<title>Igor Macedo - Engenheiro de Computação | Portfólio</title>
+</head>
+
 <body>
-	<nav class="navbar navigation_area">
+	<!-- Navigation -->
+	<nav class="navbar" role="navigation" aria-label="Main navigation">
 		<div class="container">
-			<div class="navbar-header">
-				<div class="collapse navbar-collapse" id="navigation1">
-					<nav>
-						<ul>
-							<li><a href="#header" class="active">Home</a></li>
-							<li><a href="#tcc-intro">TCC</a></li>
-							<li><a href="#customers">Quem Sou</a></li>
-							<li><a href="#cv-2017">Currículo</a></li>
-							<li><a href="#page-contact">Contato</a></li>
-						</ul>
-					</nav>
+			<div class="nav-content">
+				<!-- Logo/Brand -->
+				<div class="nav-brand">
+					<a href="#home" aria-label="Home">
+						<strong style="font-size: var(--font-size-xl); color: var(--color-primary);">IGOR MACEDO</strong>
+					</a>
+				</div>
+
+				<!-- Navigation Menu -->
+				<ul class="nav-menu" role="menubar">
+					<li role="none">
+						<a href="#home" class="nav-link active" role="menuitem">Home</a>
+					</li>
+					<li role="none">
+						<a href="#sobre" class="nav-link" role="menuitem">Sobre</a>
+					</li>
+					<li role="none">
+						<a href="#curriculo" class="nav-link" role="menuitem">Currículo</a>
+					</li>
+					<li role="none">
+						<a href="#contato" class="nav-link" role="menuitem">Contato</a>
+					</li>
+				</ul>
+
+				<!-- Theme Toggle & Mobile Menu -->
+				<div class="flex items-center gap-md">
+					<button class="theme-toggle" aria-label="Alternar tema">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+						</svg>
+					</button>
+					
+					<button class="mobile-menu-toggle" aria-label="Menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
 				</div>
 			</div>
 		</div>
 	</nav>
-	<header id="header" class="page-home">
-		<div class="col col-desktop-3 col-">
-			<img src="imagem/imagem-15.png" alt="Logo">
-		</div>
-		<div class="row">
-			<div class="col col-desktop-3 title">
-				<h2>Eu sou</h2>
-				<h1>IGOR MACEDO </h1>
-				<span>Estudante de Engenharia (TI)</span>
+
+	<!-- Hero Section -->
+	<section id="home" class="hero">
+		<div class="container">
+			<div class="grid md:grid-cols-2 gap-xl items-center">
+				<div class="hero-content animate-slide-in-left">
+					<p style="font-size: var(--font-size-lg); color: var(--color-primary); font-weight: var(--font-weight-semibold); margin-bottom: var(--space-sm);">
+						Olá, eu sou
+					</p>
+					<h1 class="hero-title">
+						Igor Macedo dos Anjos
+					</h1>
+					<p class="hero-subtitle">
+						Analista Desenvolvedor | Engenheiro de Software
+					</p>
+					<p style="color: var(--color-text-secondary); margin-bottom: var(--space-xl); line-height: var(--line-height-relaxed); max-width: 600px;">
+						Engenheiro da Computação com MBA em andamento, especializado em desenvolvimento .NET, 
+						modernização de sistemas legados e integração de APIs. Focado em soluções 
+						escaláveis e arquiteturas modernas.
+					</p>
+					<div class="flex gap-md flex-wrap">
+						<a href="#contato" class="btn btn-primary">
+							Entre em Contato
+						</a>
+						<a href="#curriculo" class="btn btn-outline">
+							Ver Currículo
+						</a>
+					</div>
+				</div>
+				
+				<div class="animate-slide-in-right" style="display: flex; justify-content: center; align-items: center; min-height: 400px;">
+					<!-- Espaço reservado para imagem ou conteúdo futuro -->
+				</div>
 			</div>
-			<div class="col col-desktop-3 animation">
-			<div id="captainAm">
-			  <div class="head"></div>
-			  <div class="leftEye"></div>
-			  <div class="rightEye"></div>
-			  <div class="nose-mouth"></div>
-			  <div class="wings"></div>
-			  <div class="captain-body"></div>
-			  <div class="star"></div>
-			  <div class="belt"></div>
-			  <div class="leftArm"></div>
-			  <div class="Rightarm"></div>
-			  <div class="legs"></div>
-			  <div class="circles"></div>
-			  <div class="shieldStar"></div>
-			  <div class="shadow-ground"></div>
-			</div>
 		</div>
-		</div>
-	</header>
+	</section>
+
+	<!-- Main Content -->
 	<main>
-		<section class="section" id="tcc-intro">
+		<!-- About Section -->
+		<section id="sobre" class="section reveal">
 			<div class="container">
-				<div class="row">
-					<div class="col col-desktop-12">
-						<div class="col col-desktop-6">
-							<div class="tcc-title-center">
-								<h2>TCC - FABRICAÇÃO DE IMPRESSORA 3D INTELIGENTE REUTILIZANDO-SE DE MATERIAIS MECÂNICOS E ELETRÔNICOS</h2>	
-							</div>
-							<div class="tcc-text">
-								<p>Este trabalho trata-se de uma tecnologia criada no século XX, que tem atualmente repercutido pelo mundo, pela sua inovação, modernismo e praticidade. Cientistas e empreendedores influentes na tecnologia mundial já se utilizam deste equipamento, desenvolve constantemente por novas e futuras melhorias. A medida que se conhece a impressora 3D, mais conquistado se fica, seja amante da tecnologia ou leigo independentemente de sua idade ou classe social. <br><br>
-								A impressora 3D inteligente reutiliza-se de materiais mecânicos e eletrônicos, tornando mais acessível por ser bem mais barata que as demais concorrentes, gerando oportunidade para as pessoas de classe menos favorecidas economicamente, a aprender a usar a tecnologia ao seu favor, aguçando a curiosidade de gerar mais ideias e imaginação para o aperfeiçoamento e melhorias do equipamento.
-								Materiais que supostamente seriam descartado, muitas das vezes de forma errada e ainda com condições de uso. E pior, acarreta diretamente no meio ambiente. Empresas e ONGs se mobilizam há alguns anos para a conscientização de preservar, cuidar e manter o planeta em boas condições para o presente e o futuro.<br><br>
-								Nas ultimas décadas, avanços científicos e tecnológicos surgem com um poder de transformação e de impacto relativamente muito abrangente, faz com o que poucas pessoas fiquem por dentro dos assuntos ou dos riscos.<br><br>
-								Assim você usando e reutilizando o mesmo material ou produto mais de uma vez, ou até a quantidade de vezes permitida pelo material, não só o meio ambiente, mais também as pessoas preservaram muitas gerações futuras de vida humana e espécies animais.</p>
-							</div>
+				<div class="section-header">
+					<h2 class="section-title">Sobre Mim & Experiências</h2>
+					<p class="section-subtitle">Perfil profissional e trajetória</p>
+				</div>
+
+				<div class="grid md:grid-cols-2 gap-xl">
+					<div class="card reveal">
+						<div style="text-align: center; margin-bottom: var(--space-lg);">
+							<img src="imagem/imagem-11.png" alt="Igor Macedo" style="max-width: 300px; margin: 0 auto; border-radius: var(--border-radius-lg);">
 						</div>
-						<div class="section" id="tcc-photo">
-							<div class="container">
-								<div class="row">
-									<div class="col col-desktop-6">
-										<div class="photo-1">
-											<img class="mySlides" src="imagem/tcc-1.png" title="Leandro, Igor Gabriel e Cezar.">
-										</div>
-										<div class="photo-3">
-											<img class="mySlides" src="imagem/tcc-3.png" title="Impressora 3D Reclicável.">
-										</div>
-										<div class="photo-2">
-											<img class="mySlides" src="imagem/tcc-2.png" title="Impressora Imprimindo.">
-										</div>
-										<div class="photo-4">
-											<img class="mySlides" src="imagem/tcc-4.png" title="Peça Impressa.">
-										</div>
-									</div>
-								</div>
-							</div>
+						<h3 style="font-size: var(--font-size-2xl); margin-bottom: var(--space-md); color: var(--color-text-primary);">
+							Perfil Profissional
+						</h3>
+						<p style="color: var(--color-text-secondary); line-height: var(--line-height-relaxed); margin-bottom: var(--space-md);">
+							Profissional de tecnologia com sólida formação em Engenharia da Computação e <strong>MBA em Engenharia de Software (FIAP)</strong> em andamento. 
+							Meu objetivo é aplicar conhecimento técnico e visão de negócios para resolver desafios complexos, 
+							contribuindo ativamente para projetos de alto impacto estratégico.
+						</p>
+						<p style="color: var(--color-text-secondary); line-height: var(--line-height-relaxed);">
+							<strong style="color: var(--color-primary);">Valores Profissionais:</strong><br>
+							Determinação, proatividade, trabalho em equipe e aprendizado contínuo. Busco sempre antecipar 
+							problemas, propor soluções e compartilhar conhecimento com a equipe.
+						</p>
+					</div>
+
+					<div class="card reveal">
+						<h3 style="font-size: var(--font-size-2xl); margin-bottom: var(--space-lg); color: var(--color-text-primary);">
+							Stack Tecnológico
+						</h3>
+						
+						<div style="margin-bottom: var(--space-lg);">
+							<h4 style="font-size: var(--font-size-lg); font-weight: var(--font-weight-semibold); color: var(--color-primary); margin-bottom: var(--space-sm);">
+								💻 Linguagens & Frameworks
+							</h4>
+							<p style="color: var(--color-text-secondary); line-height: var(--line-height-relaxed);">
+								C# • JavaScript • jQuery • ASP.NET Framework • .NET Core/8 • Blazor • Entity Framework Core
+							</p>
+						</div>
+						
+						<div style="margin-bottom: var(--space-lg);">
+							<h4 style="font-size: var(--font-size-lg); font-weight: var(--font-weight-semibold); color: var(--color-primary); margin-bottom: var(--space-sm);">
+								🗄️ Banco de Dados
+							</h4>
+							<p style="color: var(--color-text-secondary); line-height: var(--line-height-relaxed);">
+								SQL Server • PostgreSQL
+							</p>
+						</div>
+						
+						<div style="margin-bottom: var(--space-lg);">
+							<h4 style="font-size: var(--font-size-lg); font-weight: var(--font-weight-semibold); color: var(--color-primary); margin-bottom: var(--space-sm);">
+								🚀 DevOps & Infraestrutura
+							</h4>
+							<p style="color: var(--color-text-secondary); line-height: var(--line-height-relaxed);">
+								Jenkins (CI/CD) • Zabbix • Git • SVN • AWS
+							</p>
+						</div>
+						
+						<div>
+							<h4 style="font-size: var(--font-size-lg); font-weight: var(--font-weight-semibold); color: var(--color-primary); margin-bottom: var(--space-sm);">
+								📋 Metodologias
+							</h4>
+							<p style="color: var(--color-text-secondary); line-height: var(--line-height-relaxed);">
+								Scrum • Kanban • Pair Programming
+							</p>
 						</div>
 					</div>
 				</div>
-			</div>			
-		</section>
-		<section id="customers" class="section section-center">
-			<div class="container">
-				<div class="row">
-					<div class="col col-desktop-12">
-						<h1>Habilidades </h1>
-						<div class="col col-desktop-6">
-							<div class="col col-desktop-12 foto-quem-sou">
-								<img src="imagem/imagem-11.png" alt="">
-							</div>
-							<div class="col col-desktop-12 quem-sou-text">
-								<h2>Quem Sou</h2>
-								<br>
-								<p>Então, falar um pouquinho sobre de mim, admito que acho difícil fazer uma definição de mim mesma. <br><br> Prefiro que as pessoas me conheçam e tirem suas próprias conclusões e não aceito qualquer julgamento, até porque não julgo ninguém, não me permito fazer isso porque sou tão ser humano quanto você, ou qualquer outra pessoa.<br><br> Procuro plantar e semear bons frutos sempre por onde vou, pois acredito fielmente na lei do retorno...</p>
-							</div>
-						</div>
-						<div class="col col-desktop-6 habilidade">
-							<div class="col col-desktop-12 foto-habilidade">
-								<h2>Habilidades</h2>
-								<img src="imagem/script.png" alt="">
-							</div>
-						</div>
+
+				<!-- Professional Experience -->
+				<div class="grid md:grid-cols-2 gap-xl" style="margin-top: var(--space-3xl);">
+					<div class="card reveal">
+						<h3 style="font-size: var(--font-size-2xl); margin-bottom: var(--space-md); color: var(--color-text-primary);">
+							💼 Oficina Inteligente
+						</h3>
+						<p style="color: var(--color-primary); font-weight: var(--font-weight-semibold); margin-bottom: var(--space-md);">
+							Analista e Desenvolvedor | Out. 2020 – Atual
+						</p>
+						<ul style="color: var(--color-text-secondary); line-height: var(--line-height-relaxed); list-style: disc; margin-left: var(--space-lg);">
+							<li>Conversão de ERP legado para .NET Core MVC</li>
+							<li style="margin-top: var(--space-sm);">Integração com plataformas: Stone, Desk Manager, Movidesk</li>
+							<li style="margin-top: var(--space-sm);">Implementação de esteiras CI/CD no Jenkins</li>
+							<li style="margin-top: var(--space-sm);">Monitoramento de infraestrutura (AWS e Zabbix)</li>
+							<li style="margin-top: var(--space-sm);">Pair programming e compartilhamento de conhecimento</li>
+						</ul>
+					</div>
+
+					<div class="card reveal">
+						<h3 style="font-size: var(--font-size-2xl); margin-bottom: var(--space-md); color: var(--color-text-primary);">
+							💼 Orbium Soluções Interativas
+						</h3>
+						<p style="color: var(--color-primary); font-weight: var(--font-weight-semibold); margin-bottom: var(--space-md);">
+							Analista e Desenvolvedor | Dez. 2018 – Set. 2020
+						</p>
+						<ul style="color: var(--color-text-secondary); line-height: var(--line-height-relaxed); list-style: disc; margin-left: var(--space-lg);">
+							<li>Manutenção e melhorias no Orbium CRM</li>
+							<li style="margin-top: var(--space-sm);">Integrações com APIs externas</li>
+							<li style="margin-top: var(--space-sm);">Implementação de sistema de auditoria</li>
+						</ul>
 					</div>
 				</div>
-			</div>		
+			</div>
 		</section>
-		<section class="section" id="cv-2017">
+
+		<!-- Resume Section -->
+		<section id="curriculo" class="section reveal" style="background-color: var(--color-background-alt);">
 			<div class="container">
-				<div class="row">
-					<div class="col col-desktop-12">
-						<div class="col col-desktop-6">
-							<div class="cv-title-center">
-								<h1>igor macedo dos anjos</h1>
-								<h2>Engenheiro da Computação</h2>
+				<div class="section-header">
+					<h2 class="section-title">Formação & Experiências</h2>
+					<p class="section-subtitle">Educação acadêmica e trajetória profissional detalhada</p>
+				</div>
+
+				<div class="grid md:grid-cols-2 gap-xl">
+					<!-- Left Column - Education and Main Experience -->
+					<div>
+						<div class="card reveal" style="margin-bottom: var(--space-xl);">
+							<h3 style="font-size: var(--font-size-2xl); font-weight: var(--font-weight-bold); color: var(--color-text-primary); margin-bottom: var(--space-lg); text-align: center;">
+								🎓 Formação Acadêmica
+							</h3>
+
+							<div style="margin-bottom: var(--space-lg); padding: var(--space-md); background-color: var(--color-surface-elevated); border-radius: var(--border-radius-md); border-left: 4px solid var(--color-primary);">
+								<h4 style="font-size: var(--font-size-xl); font-weight: var(--font-weight-semibold); color: var(--color-primary);">
+									MBA em Engenharia de Software
+								</h4>
+								<p style="color: var(--color-text-primary); font-weight: var(--font-weight-medium); margin-top: var(--space-xs);">
+									FIAP
+								</p>
+								<p style="color: var(--color-text-secondary); font-size: var(--font-size-sm);">
+									2025 – 2026 (em andamento)
+								</p>
 							</div>
-							<div class="cv-sobremim">
-								<h2>SOBRE MIM</h2>
-								<p>Eu sou estudante de Engenharia da Computação, em processo de conclusão de curso. Sou apaixonado por tecnologia, gosto de novos desafios e inovações tecnológicas.
-								Procuro sempre aprender algo novo pela manhã, busco aperfeiçoar meu conhecimento na língua inglesa com aulas particulares e almejo iniciar uma Pós-graduação até julho de 2018.</p>
+							
+							<div style="padding: var(--space-md); background-color: var(--color-surface-elevated); border-radius: var(--border-radius-md); border-left: 4px solid var(--color-secondary);">
+								<h4 style="font-size: var(--font-size-xl); font-weight: var(--font-weight-semibold); color: var(--color-secondary);">
+									Bacharel em Engenharia da Computação
+								</h4>
+								<p style="color: var(--color-text-primary); font-weight: var(--font-weight-medium); margin-top: var(--space-xs);">
+									UNIP - Universidade Paulista
+								</p>
+								<p style="color: var(--color-text-secondary); font-size: var(--font-size-sm);">
+									2012 – 2018
+								</p>
 							</div>
-							<div class="cv-experiencia">
-								<h2>EXPERIÊNCIA PROFISSIONAL</h2>
-								<h3>TELEPERFORMANCE - (UOL)</h3>
-								<p><i>Suporte N1 | Abril 2017 - Atual</i></p>
-								<ul>
-								<li>Suporte N1 receptivo, esclarecer sobre os produtos (UOL), realizar
-								instalação de Antivírus, acesso remoto, configuração de Backup, verificar
-								plug-ins, configurações de gerenciadores e e-mails em
-								microcomputadores, tablets, notebooks e smartphones (Android e IOS).</li> <br>
-								<li>CRM Plusoft para localizar cadastro, verificação de bloqueios (SMTP),
-								erros, pendências e possíveis soluções.</li> <br>
-								<li>Além de prestar o suporte solucionando os problemas identificados,
-								realizar possíveis vendas dos produtos (UOL) se necessário.</li></ul>
-								<h3>NETESTUDIO</h3>
-								<p><i>Estágio de Front End. | Julho 2016 - Agosto 2016</i></p>
-								<ul>
-								<li>Desenvolvimento e manutenção de site utilizando o Software de E-commerce Magento.</li> <br>
-								<li>Realizar alterações de imagens, conteúdo e layout.</li> <br>
-								<li>Utilizando-se Software E-commerce Magento, Html/CSS3 e Bootstrap.</li></ul>
+						</div>
+
+						<div class="card reveal">
+							<h4 style="font-size: var(--font-size-xl); font-weight: var(--font-weight-semibold); color: var(--color-text-primary); margin-bottom: var(--space-md); border-left: 4px solid var(--color-primary); padding-left: var(--space-md);">
+								💼 Experiência Detalhada
+							</h4>
+							
+							<div style="margin-bottom: var(--space-xl);">
+								<h5 style="font-size: var(--font-size-lg); font-weight: var(--font-weight-semibold); color: var(--color-primary);">
+									Oficina Inteligente
+								</h5>
+								<p style="font-size: var(--font-size-sm); color: var(--color-text-secondary); margin-bottom: var(--space-sm);">
+									Analista e Desenvolvedor | Out. 2020 – Atual
+								</p>
+								<p style="color: var(--color-text-secondary); line-height: var(--line-height-relaxed); margin-bottom: var(--space-sm);">
+									<strong>Principais Realizações:</strong>
+								</p>
+								<ul style="color: var(--color-text-secondary); line-height: var(--line-height-relaxed); margin-left: var(--space-lg); list-style: disc;">
+									<li>Liderou conversão de ERP legado para .NET Core MVC</li>
+									<li style="margin-top: var(--space-xs);">Integração com Stone (Extrato e Connect POS)</li>
+									<li style="margin-top: var(--space-xs);">Integração com Desk Manager e Movidesk</li>
+									<li style="margin-top: var(--space-xs);">Manipulação e processamento de XML (NFe)</li>
+									<li style="margin-top: var(--space-xs);">Implementação de CI/CD com Jenkins</li>
+									<li style="margin-top: var(--space-xs);">Monitoramento AWS e Zabbix</li>
+								</ul>
 							</div>
-							<div class="cv-formacao">
-								<h2>FORMAÇÃO ACADÊMICA</h2>
-								<h3>Universidade Paulista</h3>
-								<p>Bacharel em Engenharia da Computação - Cursando 10 Semestre</p>
-								<h3>Cursos</h3>
-								<ul>
-									<li><b>Sodiprom – Centro de Formação de Aprendizes de Diadema – 2008:</b>(Rotinas Administrativas, Recursos Humanos, Informática, Espanhol Básico) e Contabilidade).</li><br>
-									<li><b>IMPACTA – Treinamento de certificação:</b> Access 2013 e SQL Server.</li> <br>
-									<li><b>CODECADEMY – Online:</b> HTML/CSS.</li> <br>
-									<li><b>CNA - Inglês definitivo:</b> Básico (Cursando).</li>
+
+							<div style="margin-bottom: var(--space-xl);">
+								<h5 style="font-size: var(--font-size-lg); font-weight: var(--font-weight-semibold); color: var(--color-primary);">
+									Orbium Soluções Interativas
+								</h5>
+								<p style="font-size: var(--font-size-sm); color: var(--color-text-secondary); margin-bottom: var(--space-sm);">
+									Analista e Desenvolvedor | Dez. 2018 – Set. 2020
+								</p>
+								<ul style="color: var(--color-text-secondary); line-height: var(--line-height-relaxed); margin-left: var(--space-lg); list-style: disc;">
+									<li>Manutenção e evolução do Orbium CRM</li>
+									<li style="margin-top: var(--space-xs);">Integrações com APIs externas</li>
+									<li style="margin-top: var(--space-xs);">Sistema de auditoria completo</li>
+								</ul>
+							</div>
+
+							<div>
+								<h5 style="font-size: var(--font-size-lg); font-weight: var(--font-weight-semibold); color: var(--color-primary);">
+									DKP Group
+								</h5>
+								<p style="font-size: var(--font-size-sm); color: var(--color-text-secondary); margin-bottom: var(--space-sm);">
+									Analista de Requisitos Jr e PO | Jun. 2018 – Ago. 2018
+								</p>
+								<ul style="color: var(--color-text-secondary); line-height: var(--line-height-relaxed); margin-left: var(--space-lg); list-style: disc;">
+									<li>Análise de requisitos</li>
+									<li style="margin-top: var(--space-xs);">Atuação como Product Owner</li>
 								</ul>
 							</div>
 						</div>
-						<div class="col col-desktop-6">
-							<div class="photo">
-								<img src="imagem/imagem-16.png" alt="">
-							</div>
-							<div class="cv-contato">
-								<div class="contato">
-									<h2>contato</h2>
+					</div>
+
+					<!-- Right Column - Contact and Additional Info -->
+					<div>
+						<div class="card reveal" style="margin-bottom: var(--space-xl);">
+							<h4 style="font-size: var(--font-size-xl); font-weight: var(--font-weight-semibold); color: var(--color-text-primary); margin-bottom: var(--space-md); text-align: center;">
+								📞 Informações de Contato
+							</h4>
+							<div style="padding: var(--space-lg); background-color: var(--color-surface-elevated); border-radius: var(--border-radius-md); text-align: center;">
+								<img src="imagem/imagem-16.png" alt="Igor Macedo" style="max-width: 200px; margin: 0 auto var(--space-lg); border-radius: var(--border-radius-full);">
+								
+								<div style="text-align: left; color: var(--color-text-secondary); line-height: var(--line-height-relaxed);">
+									<p style="margin-bottom: var(--space-sm);"><strong style="color: var(--color-primary);">📧 Email:</strong> igor.omax@gmail.com</p>
+									<p style="margin-bottom: var(--space-sm);"><strong style="color: var(--color-primary);">📱 Telefone:</strong> +55 (11) 94825-5689</p>
+									<p style="margin-bottom: var(--space-sm);"><strong style="color: var(--color-primary);">📍 Localização:</strong> Diadema Centro, SP</p>
+									<p><strong style="color: var(--color-primary);">🎂 Idade:</strong> 32 anos</p>
 								</div>
-								<p>Rua dos Ciprestes, 93 - Jd. Sapopema, Diadema, São
-								Paulo, Brasil<br>
-								(11) 94825-5689 - (11) 4049-4573 <br>
-								igor.omax@gmail.com</p>
-							
-								<h3>2010 - 2017 - VOLUNTÁRIO</h3>
-								<p>Realizo um trabalho voluntário ministrando aulas de
-								capoeira sobre (música, instrumentos, história e movimentos) com os moradores do bairro Jardim Sapopema da cidade de Diadema/SP.</p>
-								
-								<h3>2016 - TCC APROVADO</h3>
-								<p>FABRICAÇÃO DE IMPRESSORA 3D INTELIGENTE REUTILIZANDO-SE DE MATERIAIS MECÂNICOS E ELETRÔNICOS</p>
-								
-								<h3>2017 - SCHOOL OF NET</h3>
-								<p>Cursando online - (HTML5, CSS3, PHP).</p>
-								
-								<h3>2017 - EDUCA</h3>
-								<p>Cursando online - (Gestão de Projetos).</p>
+							</div>
+						</div>
+
+						<div class="card reveal" style="margin-bottom: var(--space-xl);">
+							<h4 style="font-size: var(--font-size-xl); font-weight: var(--font-weight-semibold); color: var(--color-text-primary); margin-bottom: var(--space-md);">
+								🌟 Soft Skills
+							</h4>
+							<div style="display: grid; gap: var(--space-sm);">
+								<div style="padding: var(--space-sm); background-color: var(--color-surface-elevated); border-radius: var(--border-radius-md);">
+									<strong style="color: var(--color-primary);">✓</strong> Determinação e foco em resultados
+								</div>
+								<div style="padding: var(--space-sm); background-color: var(--color-surface-elevated); border-radius: var(--border-radius-md);">
+									<strong style="color: var(--color-primary);">✓</strong> Proatividade na resolução de problemas
+								</div>
+								<div style="padding: var(--space-sm); background-color: var(--color-surface-elevated); border-radius: var(--border-radius-md);">
+									<strong style="color: var(--color-primary);">✓</strong> Trabalho em equipe colaborativo
+								</div>
+								<div style="padding: var(--space-sm); background-color: var(--color-surface-elevated); border-radius: var(--border-radius-md);">
+									<strong style="color: var(--color-primary);">✓</strong> Aprendizado contínuo
+								</div>
+								<div style="padding: var(--space-sm); background-color: var(--color-surface-elevated); border-radius: var(--border-radius-md);">
+									<strong style="color: var(--color-primary);">✓</strong> Adaptabilidade e dinamismo
+								</div>
+							</div>
+						</div>
+
+						<div class="card reveal">
+							<h4 style="font-size: var(--font-size-xl); font-weight: var(--font-weight-semibold); color: var(--color-text-primary); margin-bottom: var(--space-md);">
+								🏆 Destaques
+							</h4>
+							<div style="color: var(--color-text-secondary); line-height: var(--line-height-relaxed);">
+								<p style="margin-bottom: var(--space-md); padding: var(--space-sm); background-color: var(--color-surface-elevated); border-radius: var(--border-radius-md); border-left: 4px solid var(--color-accent);">
+									<strong style="color: var(--color-accent);">2016</strong><br>
+									TCC Aprovado: Fabricação de Impressora 3D Inteligente
+								</p>
+								<p style="margin-bottom: var(--space-md); padding: var(--space-sm); background-color: var(--color-surface-elevated); border-radius: var(--border-radius-md); border-left: 4px solid var(--color-success);">
+									<strong style="color: var(--color-success);">2010 - 2017</strong><br>
+									Trabalho Voluntário ministrando aulas de capoeira
+								</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="section" id="page-contact">
+
+		<!-- Contact Section -->
+		<section id="contato" class="section reveal">
 			<div class="container">
-				<div class="row">
-					<div class="contact">
-						<h2>Contato</h2>
-						<p>Estou a disposição para esclarecer quaisquer dúvidas. Por favor não deixam de entrar em contato. <br>
-						Desde já agradeço.</p>
-						<div class="container">
-							<!-- https://github.com/dwyl/html-form-send-email-via-google-script-without-server -->
-							<form action="https://script.google.com/macros/s/AKfycbxCyNDuB8cO8rA2ayRNO7b13iuhtLewq_qmkWVXf5jobP0WJI7O/exec" class="row" method="post">
-								<div class="col col-desktop-6 a">
-									<div id="altura-nome">
-										<div class="form-group">
-											<div class="imput-control">
-												<input id="nome" name="nome" type="text" required placeholder="Nome...">
-												<label for="nome">Nome*</label>
-											</div>
-										</div>
-									<div class="form-group">
-										<div class="imput-control">
-												<input id="email" name="email" type="email" required placeholder="E-mail...">
-												<label for="email">E-mail*</label>
-											</div>
-									</div>
-									<div class="form-group">
-										<div class="imput-control">
-											<input id="telefone" name="telefone" type="number" required placeholder="Telefone...">
-											<label for="telefone">Telefone*</label>
-										</div>
-									</div>
-									<div id="altura-msg">	
-										<div class="form-group">
-											<textarea id="mensagem" name="mensagem" id="" cols=
-											"30" rows="10" placeholder="Mensagem..."></textarea>
-										</div>
-									</div>
-									</div>
-										<input type="submit" value="Enviar" class="btn-orange">
-									</div>
-								<div class="col col-desktop-6 b">
-									<div class="col col-dm-3 contact">
-										<h3>Entre em Contato:</h3>
-										<nav>
-											<ul class="footer-cont">
-												<li>
-													<p>igor.omax@gmail.com</p>
-													<img src="imagem/social/social-gmail.png" title="E-mail">
-												</li>
-												<li>
-													<p>11 94825-5689</p>
-													<img src="imagem/social/social-whats.png" title="WhatsApp">
-												</li>
-											</ul>
-										</nav>
-									</div>
-									<div class="col col-dm-3 social">
-										<a href="https://www.linkedin.com/in/igor-macedo-4a60b779/" target="blank">
-											<img src="imagem/social/social-linkedin.png">
-										</a>
-										<a href="https://www.facebook.com/igor.omax" target="blank">
-											<img src="imagem/social/social-face.png">
-										</a>
+				<div class="section-header">
+					<h2 class="section-title">Entre em Contato</h2>
+					<p class="section-subtitle">
+						Estou à disposição para esclarecer quaisquer dúvidas. Por favor, não deixe de entrar em contato.
+					</p>
+				</div>
+
+				<div class="grid md:grid-cols-2 gap-xl">
+					<!-- Contact Form -->
+					<div class="card reveal">
+						<form id="contact-form" action="https://script.google.com/macros/s/AKfycbxCyNDuB8cO8rA2ayRNO7b13iuhtLewq_qmkWVXf5jobP0WJI7O/exec" method="post">
+							<div class="form-group">
+								<label for="nome" class="form-label">Nome *</label>
+								<input 
+									type="text" 
+									id="nome" 
+									name="nome" 
+									class="form-input" 
+									placeholder="Seu nome completo"
+									required
+									aria-required="true"
+								>
+							</div>
+
+							<div class="form-group">
+								<label for="email" class="form-label">E-mail *</label>
+								<input 
+									type="email" 
+									id="email" 
+									name="email" 
+									class="form-input" 
+									placeholder="seu.email@exemplo.com"
+									required
+									aria-required="true"
+								>
+							</div>
+
+							<div class="form-group">
+								<label for="telefone" class="form-label">Telefone *</label>
+								<input 
+									type="tel" 
+									id="telefone" 
+									name="telefone" 
+									class="form-input" 
+									placeholder="(11) 99999-9999"
+									required
+									aria-required="true"
+								>
+							</div>
+
+							<div class="form-group">
+								<label for="mensagem" class="form-label">Mensagem</label>
+								<textarea 
+									id="mensagem" 
+									name="mensagem" 
+									class="form-textarea" 
+									placeholder="Escreva sua mensagem aqui..."
+									rows="5"
+								></textarea>
+							</div>
+
+							<button type="submit" class="btn btn-primary w-full">
+								Enviar Mensagem
+							</button>
+						</form>
+					</div>
+
+					<!-- Contact Info -->
+					<div>
+						<div class="card reveal" style="margin-bottom: var(--space-lg);">
+							<h3 style="font-size: var(--font-size-2xl); font-weight: var(--font-weight-bold); color: var(--color-text-primary); margin-bottom: var(--space-lg);">
+								Informações de Contato
+							</h3>
+							
+							<div style="display: flex; flex-direction: column; gap: var(--space-lg);">
+								<div style="display: flex; align-items: start; gap: var(--space-md);">
+									<span style="font-size: var(--font-size-2xl);">📧</span>
+									<div>
+										<h4 style="font-weight: var(--font-weight-semibold); color: var(--color-text-primary); margin-bottom: var(--space-xs);">
+											E-mail
+										</h4>
+										<p style="color: var(--color-text-secondary);">
+											igor.omax@gmail.com
+										</p>
 									</div>
 								</div>
-							</form>
+
+								<div style="display: flex; align-items: start; gap: var(--space-md);">
+									<span style="font-size: var(--font-size-2xl);">📱</span>
+									<div>
+										<h4 style="font-weight: var(--font-weight-semibold); color: var(--color-text-primary); margin-bottom: var(--space-xs);">
+											WhatsApp
+										</h4>
+										<p style="color: var(--color-text-secondary);">
+											(11) 94825-5689
+										</p>
+									</div>
+								</div>
+
+								<div style="display: flex; align-items: start; gap: var(--space-md);">
+									<span style="font-size: var(--font-size-2xl);">📍</span>
+									<div>
+										<h4 style="font-weight: var(--font-weight-semibold); color: var(--color-text-primary); margin-bottom: var(--space-xs);">
+											Localização
+										</h4>
+										<p style="color: var(--color-text-secondary);">
+											Diadema, São Paulo<br>
+											Brasil
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="card reveal" style="text-align: center;">
+							<h3 style="font-size: var(--font-size-xl); font-weight: var(--font-weight-semibold); color: var(--color-text-primary); margin-bottom: var(--space-lg);">
+								Redes Sociais
+							</h3>
+							<div class="social-links" style="justify-content: center;">
+								<a href="https://www.linkedin.com/in/igor-macedo-4a60b779/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+									<img src="imagem/social/social-linkedin.png" alt="LinkedIn" style="width: 24px; height: 24px;">
+								</a>
+								<a href="https://www.facebook.com/igor.omax" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+									<img src="imagem/social/social-face.png" alt="Facebook" style="width: 24px; height: 24px;">
+								</a>
+								<a href="mailto:igor.omax@gmail.com" class="social-link" aria-label="Email">
+									<img src="imagem/social/social-gmail.png" alt="Gmail" style="width: 24px; height: 24px;">
+								</a>
+								<a href="https://wa.me/5511948255689" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp">
+									<img src="imagem/social/social-whats.png" alt="WhatsApp" style="width: 24px; height: 24px;">
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>	
+		</section>
 	</main>
-	<footer id="footer">
-		<div class="container-copyright">
-			<p>&copy Eng. Computação Igor Macedo 2017 - Todos os direitos resevados</p>
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-content">
+				<p class="footer-text">
+					&copy; 2017-2025 Igor Macedo dos Anjos - Engenharia de Computação
+				</p>
+				<p class="footer-text">
+					Todos os direitos reservados
+				</p>
+			</div>
 		</div>
 	</footer>
+
+	<!-- JavaScript -->
+	<script src="js/app.js" defer></script>
 </body>
 </html>
